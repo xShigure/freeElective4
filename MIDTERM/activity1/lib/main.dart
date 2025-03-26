@@ -28,23 +28,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  // int _counter = 0;
-
-  // void _incrementCounter() {
-  //   setState(() {
-  //     _counter++;
-  //   });
-  // }
   String username = "kiel";
   String password = "gavanez";
 
   final username_input = TextEditingController();
   final password_input = TextEditingController();
 
-
   void _login() { 
     setState(() {
-      // print(username + " , " + password);
       if (username_input.text == username && password_input.text == password) {
         print("Login Successful");
       }else if (username_input.text != username && password_input.text == password){

@@ -37,7 +37,7 @@ class MyHomePageState extends State<MyHomePage>{
   bool clickedA = false;
   bool clickedB = false;
  
-  void MyFunction(String text_value){
+  void MyFunction(String textValue){
     setState(() {
       // this.text_1 = text_value;
     });

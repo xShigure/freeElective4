@@ -53,11 +53,16 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: Text(widget.title, textAlign: TextAlign.center),
       ),
       body: Center(
         child: Column(
           children: [
+            Row(
+              children: [
+                Expanded(child: Text(""))
+              ],
+            ),
             Row(
               children: [
                 Expanded(child: Column()),
@@ -95,6 +100,11 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Row(
               children: [
+                Expanded(child: Text(""))
+              ],
+            ),
+            Row(
+              children: [
                 Expanded(child: Column()),
                 Expanded(child:
                   ElevatedButton(onPressed: _login, child: 
@@ -102,6 +112,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   ) 
                 ),
                 Expanded(child: Column()), 
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(child: Text(""))
               ],
             ),
             Row(
